@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MathDice Juan Alarco</title>
+  </head>
+  <body>
+    <script>
+    var numeroTotal = 15;
+
+    var valor1 = prompt("introduce un numero");
+    var valor1Num=parseInt(valor1);
+    var valor2 = prompt("Introduce otro numero");
+    var valor2Num=parseInt(valor2);
+
+    var suma = "+";
+    var resta = "-";
+
+    var operador = prompt("Quieres sumar o restar?");
+    if (operador!=resta) {
+    var resultadoSuma = (valor1Num + valor2Num);
+      alert (resultadoSuma)
+    }
+    else if (operador!=suma) {
+    var resultadoResta = (valor1 - valor2);
+      alert (resultadoResta)
+    }
+    if (resultadoSuma==numeroTotal) {
+      alert ("Lo has conseguido, enhorabuena");
+    }
+    else if (resultadoSuma!=numeroTotal) {
+      alert ("Has fallado, vuelve a intentarlo");
+    }
+    if (resultadoResta==numeroTotal) {
+      alert ("Lo has conseguido, enhorabuena");
+    }
+    else if (resultadoResta!=numeroTotal) {
+      alert ("Has fallado, vuelve a intentarlo");
+    }
+    </script>
+  </body>
+</html>
